@@ -1,0 +1,32 @@
+<html lang="en">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Franco | Register Page</title>
+
+  <link rel="stylesheet" href="css/login.css">
+ 
+</head>
+<body>
+
+  <section class="section-form">
+    <h2>Register User</h2>
+    <form novalidate="" onsubmit="return validateCaptcha()" method="POST">
+      <input type="text" placeholder="Enter Username.." id="username">
+      <input type="email" placeholder="Enter Email.." id="email">
+      <input type="password" placeholder="Enter Password.." id="password">
+
+      <div class="g-recaptcha" data-sitekey="6Les99IpAAAAAOeWmnas4Z8F-vIX9SMgFu_ozb03"></div><br>
+
+      <input type="submit" value="Sign Up" id="sign_up">
+
+      <div style="display: flex; align-items: end;">
+      Have Account ?
+      <a href="login.html"> Login </a>
+    </div>
+    </form>
+  </section>
+  <script src="js/register.js"></script>
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</body>
+</html>
